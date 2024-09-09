@@ -1,0 +1,8 @@
+stream_menu.example:
+  title: 'Stream'
+  description: 'A description of my custom link.'
+  route_name: stream_menu.related_stream
+  menu_name: main
+  weight: 0
+  requirements:
+    _custom_access: '\Drupal\stream_menu\Access\StreamMenuAccessCheck::access'
