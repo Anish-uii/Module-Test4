@@ -1,0 +1,20 @@
+uuid: 29afeee3-0d87-4f89-a233-a42007db1a5f
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.field_maximum_marks
+field_name: field_maximum_marks
+entity_type: media
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

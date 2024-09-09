@@ -1,0 +1,32 @@
+uuid: 16218475-dd2e-4213-8f9e-f093993844bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.assignment_attachments
+  module:
+    - node
+    - views
+  theme:
+    - bootstrap5
+id: bootstrap5_views_block__assignment_attachments_block_1
+theme: bootstrap5
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:assignment_attachments-block_1'
+settings:
+  id: 'views_block:assignment_attachments-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      subject: subject

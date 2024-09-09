@@ -1,0 +1,25 @@
+mlid:
+  'menu_link_content:ca49d86a-d8b7-4910-8d6e-81a16fcef421':
+    roles:
+      - administrator
+      - academic_head
+    access_check: false
+  'menu_link_content:c5696335-cb4b-43ea-bb0d-0d7d323956ea':
+    roles:
+      - anonymous
+    access_check: false
+  'menu_link_content:63d6f2f7-cf50-4187-ae5e-d4daef2c5c41':
+    roles:
+      - anonymous
+    access_check: false
+  'menu_link_content:2fc04930-7496-433f-8034-f676f94e9996':
+    roles:
+      - authenticated
+    access_check: false
+  'menu_link_content:2cb461da-3a7b-481c-8fc9-f0245fa685cf':
+    roles:
+      - administrator
+    access_check: false
+  'menu_link_content:2b3d6496-f11a-492d-93cf-bb9b0cf7e88d':
+    roles: {  }
+    access_check: false

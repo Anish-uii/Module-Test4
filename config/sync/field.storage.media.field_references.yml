@@ -1,0 +1,19 @@
+uuid: 44671c44-317d-486c-862e-f77063a967e0
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - media
+id: media.field_references
+field_name: field_references
+entity_type: media
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

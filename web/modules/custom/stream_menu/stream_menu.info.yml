@@ -1,0 +1,7 @@
+name: 'Stream Menu'
+type: module
+description: 'Provides a dynamic menu link to a user’s associated stream.'
+core_version_requirement: ^10
+package: Custom
+dependencies:
+  - drupal:user

@@ -1,0 +1,7 @@
+name: 'Graduation Status Check'
+type: module
+description: 'Deletes student records whose graduation is more than 6 months old.'
+core_version_requirement: ^10 || ^11
+package: Custom
+dependencies:
+  - drupal:user

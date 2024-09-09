@@ -1,0 +1,62 @@
+uuid: 30630db2-df9e-4846-a3c3-c4b98f78d0dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.assignment.field_assignment_related_subject
+    - field.field.media.assignment.field_description
+    - field.field.media.assignment.field_maximum_marks
+    - field.field.media.assignment.field_media_file
+    - media.type.assignment
+  module:
+    - file
+id: media.assignment.default
+targetEntityType: media
+bundle: assignment
+mode: default
+content:
+  field_assignment_related_subject:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_description:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_maximum_marks:
+    type: number
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_media_file:
+    type: file_generic
+    weight: 3
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  status: true
+  uid: true

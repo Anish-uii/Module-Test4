@@ -1,0 +1,26 @@
+uuid: d14be34e-4053-4323-a10d-bd9241d699fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.video.field_lecture_description
+    - field.field.media.video.field_media_video_file
+    - field.field.media.video.field_related_subject
+    - media.type.video
+_core:
+  default_config_hash: kGv8YsopqHvzTzb7QTINWcv0fnNa5ZDQyZxpOQR2vro
+id: media.video.media_library
+targetEntityType: media
+bundle: video
+mode: media_library
+content: {  }
+hidden:
+  created: true
+  field_lecture_description: true
+  field_media_video_file: true
+  field_related_subject: true
+  name: true
+  path: true
+  status: true
+  uid: true

@@ -1,0 +1,20 @@
+uuid: 9d7225c4-0d25-4bf9-9ccb-feb59cc3083d
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: media.field_assignment_related_subject
+field_name: field_assignment_related_subject
+entity_type: media
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,70 @@
+uuid: 3f39db49-f2a4-4172-b033-ff108c06fd24
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_graduated
+    - field.field.user.user.field_joining_year
+    - field.field.user.user.field_passing_year
+    - field.field.user.user.field_phone_number
+    - field.field.user.user.field_student_stream
+  module:
+    - user
+_core:
+  default_config_hash: FaQ9Ptcpxpg30AtiqRDtl_8zbJArHP1LPfug_s59TOA
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: -10
+    region: content
+  contact:
+    weight: 5
+    region: content
+  field_graduated:
+    type: boolean_checkbox
+    weight: 11
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_joining_year:
+    type: number
+    weight: 9
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_passing_year:
+    type: number
+    weight: 10
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_phone_number:
+    type: number
+    weight: 12
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_student_stream:
+    type: entity_reference_autocomplete
+    weight: 7
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  language:
+    weight: 0
+    region: content
+  timezone:
+    weight: 6
+    region: content
+hidden: {  }

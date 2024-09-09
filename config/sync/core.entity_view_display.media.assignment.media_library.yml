@@ -1,0 +1,38 @@
+uuid: 6b7cd452-615b-48f0-a53a-78ac6c969dba
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.assignment.field_assignment_related_subject
+    - field.field.media.assignment.field_description
+    - field.field.media.assignment.field_maximum_marks
+    - field.field.media.assignment.field_media_file
+    - image.style.medium
+    - media.type.assignment
+  module:
+    - image
+id: media.assignment.media_library
+targetEntityType: media
+bundle: assignment
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_assignment_related_subject: true
+  field_description: true
+  field_maximum_marks: true
+  field_media_file: true
+  name: true
+  uid: true

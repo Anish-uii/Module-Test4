@@ -1,0 +1,19 @@
+uuid: 320706ed-0c57-4c26-af38-fdd13de95689
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_material_description
+    - media.type.study_materials
+id: media.study_materials.field_material_description
+field_name: field_material_description
+entity_type: media
+bundle: study_materials
+label: 'Material Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

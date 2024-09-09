@@ -1,0 +1,18 @@
+uuid: a385a815-2d08-4069-b143-9a4a0099afc9
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Subject
+type: subject
+description: 'The subjects related to the streams.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

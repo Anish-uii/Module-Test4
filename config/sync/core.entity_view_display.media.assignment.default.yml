@@ -1,0 +1,62 @@
+uuid: 16e3a787-72ca-45f4-9307-08f5c7ac85bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.assignment.field_assignment_related_subject
+    - field.field.media.assignment.field_description
+    - field.field.media.assignment.field_maximum_marks
+    - field.field.media.assignment.field_media_file
+    - media.type.assignment
+  module:
+    - file
+id: media.assignment.default
+targetEntityType: media
+bundle: assignment
+mode: default
+content:
+  field_assignment_related_subject:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_description:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_maximum_marks:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_media_file:
+    type: file_default
+    label: visually_hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  thumbnail: true
+  uid: true

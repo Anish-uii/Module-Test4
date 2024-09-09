@@ -1,0 +1,8 @@
+stream_menu.related_stream:
+  path: '/stream'
+  defaults:
+    _controller: '\Drupal\stream_menu\Controller\StreamMenuController::redirectToStream'
+    _title: 'Stream Link'
+  requirements:
+    _permission: 'access content'
+    stream: '.+'

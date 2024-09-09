@@ -1,0 +1,7 @@
+custom_login.user_check:
+  path: '/user-login'
+  defaults:
+    _form: '\Drupal\custom_login\Form\UserLoginForm'
+    _title: 'User Check'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,23 @@
+uuid: 952d41db-160f-4e52-bfdd-9872895d531e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_maximum_marks
+    - media.type.assignment
+id: media.assignment.field_maximum_marks
+field_name: field_maximum_marks
+entity_type: media
+bundle: assignment
+label: 'Maximum Marks'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 5
+  max: 100
+  prefix: ''
+  suffix: ''
+field_type: integer

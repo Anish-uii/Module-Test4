@@ -1,0 +1,29 @@
+uuid: c99516bf-3332-45b9-9b0d-d375641485ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_related_subject
+    - media.type.video
+    - node.type.subject
+id: media.video.field_related_subject
+field_name: field_related_subject
+entity_type: media
+bundle: video
+label: 'Related Subject'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      subject: subject
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

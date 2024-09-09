@@ -1,0 +1,32 @@
+uuid: fdc45bae-2461-409c-b9ff-3623b7bb105d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.notice.body
+    - field.field.node.notice.field_event_date
+    - node.type.notice
+  module:
+    - text
+    - user
+id: node.notice.teaser
+targetEntityType: node
+bundle: notice
+mode: teaser
+content:
+  body:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 150
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_event_date: true

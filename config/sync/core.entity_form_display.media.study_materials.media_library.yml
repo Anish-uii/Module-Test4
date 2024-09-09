@@ -1,0 +1,45 @@
+uuid: 0a9cd5db-d82b-45aa-9cba-63925914e0f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.study_materials.field_material_description
+    - field.field.media.study_materials.field_media_file_1
+    - field.field.media.study_materials.field_media_image
+    - field.field.media.study_materials.field_references
+    - field.field.media.study_materials.field_subject
+    - image.style.thumbnail
+    - media.type.study_materials
+  module:
+    - image
+id: media.study_materials.media_library
+targetEntityType: media
+bundle: study_materials
+mode: media_library
+content:
+  field_media_image:
+    type: image_image
+    weight: 5
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_material_description: true
+  field_media_file_1: true
+  field_references: true
+  field_subject: true
+  path: true
+  status: true
+  uid: true

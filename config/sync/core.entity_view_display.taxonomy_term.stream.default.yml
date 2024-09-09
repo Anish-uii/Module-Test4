@@ -1,0 +1,21 @@
+uuid: fc7bfc78-627e-464c-a937-f311b2edb1e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.stream
+  module:
+    - text
+id: taxonomy_term.stream.default
+targetEntityType: taxonomy_term
+bundle: stream
+mode: default
+content:
+  description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

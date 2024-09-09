@@ -1,0 +1,6 @@
+services:
+  stream_menu.access_check:
+    class: Drupal\stream_menu\Access\StreamMenuAccessCheck
+    arguments: []
+    tags:
+      - { name: access_check, applies_to: _custom_access }

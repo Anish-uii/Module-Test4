@@ -1,0 +1,13 @@
+uuid: 446399d0-1ae4-44b0-b716-5c94509ef24a
+langcode: en
+status: true
+dependencies: {  }
+id: study_materials
+label: 'Study Materials'
+description: 'Study materials assigned for a subject.'
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_file_1
+field_map: {  }

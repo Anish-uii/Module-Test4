@@ -1,0 +1,9 @@
+uuid: 1c9c7734-d71e-45c8-abd9-57bf513721f0
+langcode: en
+status: true
+dependencies: {  }
+name: Stream
+vid: stream
+description: 'The stream for a particular student.'
+weight: 0
+new_revision: false

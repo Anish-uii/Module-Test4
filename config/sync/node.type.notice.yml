@@ -1,0 +1,18 @@
+uuid: 081f58cc-8fbb-4357-8f48-b5e6994c74de
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Notice
+type: notice
+description: 'The notice for the students.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

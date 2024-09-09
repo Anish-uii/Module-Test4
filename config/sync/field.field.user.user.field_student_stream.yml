@@ -1,0 +1,30 @@
+uuid: e6ea8f44-821c-4e00-ae4e-212dca9c522b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_student_stream
+    - taxonomy.vocabulary.stream
+  module:
+    - user
+id: user.user.field_student_stream
+field_name: field_student_stream
+entity_type: user
+bundle: user
+label: 'Student Stream'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      stream: stream
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

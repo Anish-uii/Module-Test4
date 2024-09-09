@@ -1,0 +1,29 @@
+uuid: 3b959a6a-7915-4ecc-85e8-31154bc69a7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.content_summary
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap5
+id: bootstrap5_views_block__content_summary_block_1
+theme: bootstrap5
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:content_summary-block_1'
+settings:
+  id: 'views_block:content_summary-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /admin-dashboard

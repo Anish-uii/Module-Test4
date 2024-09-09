@@ -1,0 +1,29 @@
+uuid: 01d82ae4-87f9-422f-8b6f-0d62cafc0a23
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.inactive_users
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap5
+id: bootstrap5_views_block__inactive_users_block_1
+theme: bootstrap5
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:inactive_users-block_1'
+settings:
+  id: 'views_block:inactive_users-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /admin-dashboard

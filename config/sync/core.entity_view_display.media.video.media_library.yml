@@ -1,0 +1,38 @@
+uuid: 0f02e0c9-91e8-402b-9386-c854cecc9963
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.video.field_lecture_description
+    - field.field.media.video.field_media_video_file
+    - field.field.media.video.field_related_subject
+    - image.style.thumbnail
+    - media.type.video
+  module:
+    - image
+_core:
+  default_config_hash: _fnkUKwQYHkXO1Ngmq9nE6FqWUNAmkddOxAH1h5aiKg
+id: media.video.media_library
+targetEntityType: media
+bundle: video
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_lecture_description: true
+  field_media_video_file: true
+  field_related_subject: true
+  name: true
+  uid: true

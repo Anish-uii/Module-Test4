@@ -1,0 +1,6 @@
+student_api.config:
+  title: 'Student API Settings'
+  description: 'Configure the settings for the Blog API.'
+  parent: system.admin_config_content
+  route_name: student_api.config_form
+  weight: 100

@@ -1,0 +1,9 @@
+name: 'Student Registration Form'
+type: module
+description: 'Provides a registration form for students with email verification and notifications.'
+core_version_requirement: ^10 || ^11
+package: Custom
+dependencies:
+  - taxonomy
+  - user
+  - smtp
