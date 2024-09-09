@@ -1,0 +1,6 @@
+services:
+  student_api.controller:
+    class: Drupal\student_api\Controller\StudentApiController
+    arguments: ['@entity_type.manager']
+    tags:
+      - { name: controller.service_arguments }

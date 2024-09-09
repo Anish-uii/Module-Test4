@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * Implements hook_cron().
+ */
+function notice_check_cron() {
+  $current_time = \Drupal::time()->getRequestTime();
+  
+  $query = \Drupal::entityQuery('node')
+    ->condition('type', 'notice')
+    ->accessCheck(FALSE);
+
+  $nodeIds = $query->execute();
+  
+  if (!empty($nodeIds)) {
+    $noticeNodes = \Drupal\node\Entity\Node::loadMultiple($nodeIds);
+    
+    foreach ($noticeNodes as $singleNoticeNode) {
+      if ($singleNoticeNode->hasField('field_event_date') && !$singleNoticeNode->get('field_event_date')->isEmpty()) {
+        $field_date_value = $singleNoticeNode->get('field_event_date')->value;
+        
+        $field_date_timestamp = strtotime($field_date_value);
+        
+        if ($field_date_timestamp < $current_time) {
+          $singleNoticeNode->delete();
+        }
+      }
+    }
+  }
+}

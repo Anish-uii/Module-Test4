@@ -14,9 +14,9 @@ definitions:
     expanded: false
     enabled: true
   stream_menu__example:
-    weight: -48
-    menu_name: main
+    menu_name: student-stream
     parent: ''
+    weight: 0
     expanded: false
     enabled: true
   system__admin_content:

@@ -20,3 +20,6 @@ mlid:
     roles:
       - administrator
     access_check: false
+  'menu_link_content:2b3d6496-f11a-492d-93cf-bb9b0cf7e88d':
+    roles: {  }
+    access_check: false

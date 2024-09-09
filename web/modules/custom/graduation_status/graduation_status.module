@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * Implements hook_cron().
+ */
+function graduation_status_cron() {
+  $entity_type_manager = \Drupal::service('entity_type.manager');
+  $user_storage = $entity_type_manager->getStorage('user');
+
+  $current_time = \Drupal::time()->getRequestTime();
+  $six_months_ago = strtotime('-6 months', $current_time);
+  $cutoff_date = date('Y-m-d', $six_months_ago);
+
+  $query = $user_storage->getQuery()
+    ->condition('status', 1)
+    ->condition('field_passing_year', $cutoff_date, '<')
+    ->condition('roles', 'student')
+    ->accessCheck(FALSE);
+
+  $uids = $query->execute();
+
+  if ($uids) {
+    $users = $user_storage->loadMultiple($uids);
+    foreach ($users as $user) {
+      if ($user->hasRole('student')) {
+        $user->delete();
+      }
+    }
+  }
+}

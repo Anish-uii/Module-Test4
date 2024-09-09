@@ -1,0 +1,5 @@
+name: 'Student API'
+type: module
+description: 'Exposes an API to list blogs with configurable filters.'
+core_version_requirement: ^10 || ^11
+package: Custom

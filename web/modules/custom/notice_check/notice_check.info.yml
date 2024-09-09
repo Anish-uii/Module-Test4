@@ -1,0 +1,7 @@
+name: 'Notice Check and Delete'
+type: module
+description: 'Deletes notices with past event dates.'
+core_version_requirement: ^10 || ^11
+package: Custom
+dependencies:
+  - drupal:node

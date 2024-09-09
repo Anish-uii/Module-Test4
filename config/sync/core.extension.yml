@@ -23,6 +23,7 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  graduation_status: 0
   help: 0
   history: 0
   image: 0
@@ -35,6 +36,7 @@ module:
   menu_ui: 0
   mysql: 0
   node: 0
+  notice_check: 0
   options: 0
   page_cache: 0
   path: 0
@@ -44,6 +46,7 @@ module:
   smtp: 0
   statistics: 0
   stream_menu: 0
+  student_api: 0
   student_registration: 0
   system: 0
   taxonomy: 0

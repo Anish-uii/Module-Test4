@@ -1,0 +1,8 @@
+uuid: f4ccc62e-ef94-4827-85ce-6c7391b4d90c
+langcode: en
+status: true
+dependencies: {  }
+id: student-stream
+label: 'Student Stream'
+description: ''
+locked: false

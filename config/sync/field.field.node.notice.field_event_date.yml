@@ -1,0 +1,21 @@
+uuid: ee7d64a8-0a52-4735-8ffe-4fbf99f8ac6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_date
+    - node.type.notice
+  module:
+    - datetime
+id: node.notice.field_event_date
+field_name: field_event_date
+entity_type: node
+bundle: notice
+label: 'Event Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
