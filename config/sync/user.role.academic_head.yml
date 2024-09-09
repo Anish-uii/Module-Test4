@@ -1,0 +1,24 @@
+uuid: 6558d7f9-3932-4724-b727-b3e0e0f27caf
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.assignment
+    - media.type.study_materials
+    - media.type.video
+  module:
+    - media
+id: academic_head
+label: 'Academic Head'
+weight: 4
+is_admin: null
+permissions:
+  - 'create assignment media'
+  - 'create study_materials media'
+  - 'create video media'
+  - 'delete own assignment media'
+  - 'delete own study_materials media'
+  - 'delete own video media'
+  - 'edit own assignment media'
+  - 'edit own study_materials media'
+  - 'edit own video media'

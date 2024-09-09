@@ -1,0 +1,13 @@
+uuid: 3ca3612e-f6fc-465b-8943-bae29f4484f6
+langcode: en
+status: true
+dependencies: {  }
+id: assignment
+label: Assignment
+description: 'Assignment for a subject.'
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_file
+field_map: {  }

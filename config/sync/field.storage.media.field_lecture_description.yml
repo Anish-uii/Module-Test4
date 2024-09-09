@@ -1,0 +1,19 @@
+uuid: 6ed02e1c-ce67-4d0c-ba30-2ad4afbd425d
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.field_lecture_description
+field_name: field_lecture_description
+entity_type: media
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

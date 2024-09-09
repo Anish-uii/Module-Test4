@@ -1,0 +1,32 @@
+uuid: 33eb4710-1344-4bb4-9c39-d465376eb884
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.study_materials
+  module:
+    - node
+    - views
+  theme:
+    - bootstrap5
+id: bootstrap5_views_block__study_materials_block_1
+theme: bootstrap5
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:study_materials-block_1'
+settings:
+  id: 'views_block:study_materials-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      subject: subject

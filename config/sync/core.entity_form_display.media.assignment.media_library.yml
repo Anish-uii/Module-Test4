@@ -1,0 +1,33 @@
+uuid: 6e9088a5-6792-4ab3-8c2e-810f84baf7e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.assignment.field_assignment_related_subject
+    - field.field.media.assignment.field_description
+    - field.field.media.assignment.field_maximum_marks
+    - field.field.media.assignment.field_media_file
+    - media.type.assignment
+id: media.assignment.media_library
+targetEntityType: media
+bundle: assignment
+mode: media_library
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_assignment_related_subject: true
+  field_description: true
+  field_maximum_marks: true
+  field_media_file: true
+  path: true
+  status: true
+  uid: true
